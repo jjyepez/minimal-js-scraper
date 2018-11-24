@@ -1,3 +1,10 @@
+/*
+  Name   : minimal-js-scraper
+  version: v0.1b
+  author : @jjyepez
+  date   : nov-24-2018
+  license: MIT
+*/
 class Scraper {
   constructor ( src = null ) {
     this.BASE_CORS = "https://cors-escape.herokuapp.com/"
