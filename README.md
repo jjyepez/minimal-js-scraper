@@ -7,7 +7,7 @@ Minimalist implementation of web scraping with vanilla javascript an RegExp.
 ## Implementation demo
 HTML (in head)
 ```html
-<script src="https://raw.githubusercontent.com/jjyepez/minimal-js-scraper/master/Scraper.js"></script>
+<script type="javascript" src="https://raw.githubusercontent.com/jjyepez/minimal-js-scraper/master/Scraper.js"></script>
 ````
 JS
 ```js
