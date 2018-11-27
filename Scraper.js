@@ -6,9 +6,10 @@
   license: MIT
 */
 class Scraper {
-  constructor ( src = null ) {
+  constructor ( src = null, removeCRLF = false ) {
     this.BASE_CORS = "https://cors-escape.herokuapp.com/"
     this.urlSrc = null
+    this.removeCRLF = removeCRLF
     if ( src ) this.setSrc( src )
   }
   setSrc( src ){
@@ -19,6 +20,7 @@ class Scraper {
     const rsp  = await fetch( src )
     const rslt = await rsp.text()
     this.scrapedHTML = await rslt
+    if( this.removeCRLF ) await rslt = rslt.replace(/\n/gm,'').replace(/\r/gm,'')
     return await rslt
   }
   async extraerSegunRegEx( objRegex ){
