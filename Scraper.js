@@ -19,9 +19,9 @@ class Scraper {
     const src = this.urlSrc
     const rsp  = await fetch( src )
     const rslt = await rsp.text()
-    this.scrapedHTML = await rslt
-    if( this.removeCRLF ) await rslt = rslt.replace(/\n/gm,'').replace(/\r/gm,'')
-    return await rslt
+    if( this.removeCRLF ) rslt = rslt.replace(/\n/g,'').replace(/\r/g,'')
+    this.scrapedHTML = rslt
+    return rslt
   }
   async extraerSegunRegEx( objRegex ){
     const html  = await this.getHTML()
