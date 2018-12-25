@@ -7,7 +7,8 @@
 */
 class Scraper {
   constructor ( src = null, removeCRLF = false ) {
-    this.BASE_CORS = "https://cors-escape.herokuapp.com/"
+    // --- this.BASE_CORS = "https://cors-escape.herokuapp.com/"
+    this.BASE_CORS = "https://crossorigin.me/"
     this.urlSrc = null
     this.removeCRLF = removeCRLF
     if ( src ) this.setSrc( src )
