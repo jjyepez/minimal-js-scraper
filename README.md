@@ -52,7 +52,7 @@ console output
 ["/tiendas-oficiales/categoria/MLV1430", "MLV1430", "Ropa, Zapatos y Accesorios"]
 ```
 ## License
-MIT
+![MIT](https://badgen.net/npm/license/lodash)
 
 ### Created by
 @jjyepez
